@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "3c6bc9db-3706-4efb-8d8e-6613eb35a665",
+		"name": "file upload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29669125",
+		"_collection_link": "https://orange-sunset-960945.postman.co/workspace/My-Workspace~14cc0fcd-dd70-41a9-8696-5ef8ceeece17/collection/29669125-3c6bc9db-3706-4efb-8d8e-6613eb35a665?action=share&source=collection_link&creator=29669125"
+	},
+	"item": [
+		{
+			"name": "send file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Even Number",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Anonymous/Desktop/even.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapp/upload-file/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapp",
+						"upload-file",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapp/get-files/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapp",
+						"get-files",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
